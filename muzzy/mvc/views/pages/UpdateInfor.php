@@ -77,32 +77,6 @@
     </table>
   </div>
 
-  <div class="info">
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">STT</th>
-          <th scope="col">Tên</th>
-          <th scope="col">Địa chỉ</th>
-          <th scope="col">Giờ bắt đầu</th>
-          <th scope="col">Giờ kết thúc</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php 
-          for($i = 0; $i < count($data["ReserveCourse"]); $i++){
-            echo 
-              '<tr>
-                <th scope="row">' . $i . '</th>
-                <td>' . $data["ReserveCourse"][$i]["content"] . '</td>
-                <td>' . $data["ReserveCourse"][$i]["address"] . '</td>
-                <td>' . $data["ReserveCourse"][$i]["startTime"] . '</td>
-                <td>' . $data["ReserveCourse"][$i]["endTime"] . '</td>
-              ';
-          } 
-        ?>
-      </tbody>
-    </table>
-  </div>
+
   
 </div>
