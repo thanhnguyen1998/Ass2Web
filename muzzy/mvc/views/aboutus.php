@@ -46,7 +46,7 @@
         </form>
         <?php
         if (isset($_SESSION['fullName'])) {
-          ?>
+        ?>
           <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <?php echo "Hi, " . $_SESSION['fullName'] ?>
@@ -59,7 +59,7 @@
           </div>
         <?php
         } else {
-          ?>
+        ?>
           <a href="/muzzy/User/Register">
             <button class="btn btn-outline-danger my-2 mr-sm-2" type="button">Đăng ký</button>
           </a>
@@ -85,15 +85,15 @@
       <div class="carousel-item active">
         <img src="/muzzy/public/image/banner_1.jpg" alt="First slide">
         <div class="carousel-caption">
-          <h1 class="display-2">Cafe's Shop</h1>
-          <p>Tìm kiếm quán nước tốt</p>
+          <h1 class="display-2">Muzzy</h1>
+          <p>Tìm kiếm quán cafe theo sở thích của bạn</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="/muzzy/public/image/banner_2.jpeg" alt="Second slide">
         <div class="carousel-caption">
-          <h1>Cafe's shop</h1>
-          <p>Click là đi</p>
+          <h1>Muzzy</h1>
+          <p>Nhanh và tiện ích</p>
         </div>
       </div>
 
@@ -167,7 +167,7 @@
         <div class="card">
           <img class="card-img-top" src="/muzzy/public/image/johndoe.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Trần Quốc Hoà</h5>
+            <h5 class="card-title">Vũ Khắc Tình</h5>
             <p class="card-text">Thực hiện nội dung, viết trang chi tiết quán và danh sách quán</p>
           </div>
         </div>
@@ -176,7 +176,7 @@
         <div class="card">
           <img class="card-img-top" src="/muzzy/public/image/johndoe.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Vũ Kiểu Hải Hoà</h5>
+            <h5 class="card-title">Nguyễn Hữu Đức Thành</h5>
             <p class="card-text">Viết trang chủ và thiết kế tổng thể</p>
           </div>
         </div>
@@ -185,7 +185,7 @@
         <div class="card">
           <img class="card-img-top" src="/muzzy/public/image/johndoe.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Trần Thị Kim Ngân</h5>
+            <h5 class="card-title">Phạm Nhật</h5>
             <p class="card-text">Viết trang admin</p>
           </div>
         </div>
@@ -217,9 +217,9 @@
       <div class="row text-center">
         <div class="col-md-4">
           <hr class="light">
-          <h5>Cafe's Shop</h5>
+          <h5>Muzzy</h5>
           <hr class="light">
-          <p>Cafe's Shop là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
+          <p>Muzzy là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
         </div>
         <div class="col-md-4">
           <hr class="light">

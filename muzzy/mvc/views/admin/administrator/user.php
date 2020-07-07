@@ -82,9 +82,8 @@
                         <div class="form-group">
                             <label for="adminUserAddForm_role">Phân quyền</label>
                             <select name="role" id="adminUserAddForm_role">
-                                <option value="2">Người hướng dẫn</option>
-                                <option value="3">Người dùng</option>
-                                <option value="4">Chủ quán coffee</option>
+                                <option value="1">Người dùng</option>
+                                <option value="2">Chủ quán coffee</option>
                             </select>
                         </div>
                     

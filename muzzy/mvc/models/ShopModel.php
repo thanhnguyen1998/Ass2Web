@@ -26,7 +26,7 @@ class ShopModel extends Db
         return $this->ExecuteQuery($query);
     }
     
-    public function GetListShopById() //Ngan dung
+    public function GetListShopById()
     {
         $query = "SELECT shop.id as idshop, shop.name as shopname, shop.address as shopaddress, shop.description as description, user.fullname as ownername, shop.dateopening as dateopening, shop.timeopen as timeopen, shop.timeclose as timeclose, shop.rate as rate, shop.discount as discount, shop.status as status FROM shop, user WHERE user.id = shop.idowner AND shop.status = 1";
         return $this->ExecuteQuery($query);

@@ -5,53 +5,31 @@
   <?php
   if ($data['Controller'] == "HomePage") {
     require_once "./public/modules/slick.php";
-    ?>
+  ?>
     <title>Trang chủ</title>
     <?php
-    } elseif ($data['Controller'] == "Shop") {
-      require_once "./public/modules/ShopDetail.php";
-      if ($data['Action'] == "ListShop") {
-        ?>
+  } elseif ($data['Controller'] == "Shop") {
+    require_once "./public/modules/ShopDetail.php";
+    if ($data['Action'] == "ListShop") {
+    ?>
       <title>Danh sách quán</title>
     <?php
-      } else {
-        ?>
+    } else {
+    ?>
       <title>Chi tiết quán</title>
     <?php
-      }
-    } elseif ($data['Controller'] == "Course") {
-      require_once "./public/modules/ShopDetail.php";
-      if ($data['Action'] == "ListCourse") {
-        ?>
-      <title>Danh sách khoá học</title>
-    <?php
-      } else {
-        ?>
-      <title>Chi tiết khoá học</title>
-    <?php
-      }
-    } elseif ($data['Controller'] == "Instructor") {
-      require_once "./public/modules/ShopDetail.php";
-      if ($data['Action'] == "ListInstructor") {
-        ?>
-      <title>Danh sách giảng viên</title>
-    <?php
-      } else {
-        ?>
-      <title>Chi tiết giảng viên</title>
-    <?php
-      }
-    } elseif ($data['Controller'] == "Search") {
-      require_once "./public/modules/ShopDetail.php";
-      if ($data['Action'] == "SearchResult") {
-        ?>
+    }
+  } elseif ($data['Controller'] == "Search") {
+    require_once "./public/modules/ShopDetail.php";
+    if ($data['Action'] == "SearchResult") {
+    ?>
       <title>Danh sách kết quả</title>
     <?php
-      }
-    } elseif ($data['Controller'] == "User") {
-      require_once "./public/modules/ShopDetail.php";
-      if ($data['Action'] == "UpdateInfor") {
-        ?>
+    }
+  } elseif ($data['Controller'] == "User") {
+    require_once "./public/modules/ShopDetail.php";
+    if ($data['Action'] == "UpdateInfor") {
+    ?>
       <title>Cập nhật thông tin cá nhân</title>
   <?php
     }
@@ -88,7 +66,7 @@
         </form>
         <?php
         if (isset($_SESSION['fullName'])) {
-          ?>
+        ?>
           <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <?php echo "Hi, " . $_SESSION['fullName'] ?>
@@ -101,7 +79,7 @@
           </div>
         <?php
         } else {
-          ?>
+        ?>
           <a href="/muzzy/User/Register">
             <button class="btn btn-outline-danger my-2 mr-sm-2" type="button">Đăng ký</button>
           </a>
@@ -140,7 +118,7 @@
         <div class="col-md-4">
           <hr class="light">
           <h5>
-          <img src="/muzzy/public/image/logo.png" style="width: 48px !important; height: 48px !important;" alt="logo">
+            <img src="/muzzy/public/image/logo.png" style="width: 48px !important; height: 48px !important;" alt="logo">
           </h5>
           <!-- <hr class="light"> -->
           <p>Muzzy là trang web cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
@@ -186,7 +164,7 @@
   echo "<br>";
   if (isset($data['subAction'])) {
     $include_file = "/muzzy/public/js/" . $data['subAction'] . ".js";
-  echo "<script src='" . $include_file . "'></script>";
+    echo "<script src='" . $include_file . "'></script>";
   }
   ?>
 

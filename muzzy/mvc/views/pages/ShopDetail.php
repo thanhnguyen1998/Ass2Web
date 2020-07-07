@@ -1,6 +1,6 @@
 <?php
 while ($row = mysqli_fetch_array($data['detailShop'])) {
-  ?>
+?>
   <div class="body container">
     <div class="info mt-4">
       <div class="slider">
@@ -39,37 +39,36 @@ while ($row = mysqli_fetch_array($data['detailShop'])) {
         </p>
         <div class="stars">
           <?php
-            for ($i = 0; $i < $row['rate']; $i++) {
-              ?>
+          for ($i = 0; $i < $row['rate']; $i++) {
+          ?>
             <i class="fas fa-star"></i>
           <?php
-            }
-            for ($i = 0; $i < 5 - $row['rate']; $i++) {
-              ?>
+          }
+          for ($i = 0; $i < 5 - $row['rate']; $i++) {
+          ?>
             <i class="far fa-star"></i>
           <?php
-            }
-            ?>
+          }
+          ?>
 
         </div>
         <p class="time">Giờ mở cửa: <?php echo $row['timeopen'] ?> tới <?php echo $row['timeclose'] ?></p>
         <p class="price">Giá tham khảo: 25.000 - 99.000 đ</p>
         <form class="form-row align-items-center" method="POST">
           <div class="col-auto my-1">
-            <select name="reserve"class="custom-select mr-sm-2" >
-                <?php 
-                    $start = date($row['timeopen']);
-                    $end = date($row['timeclose']);
-                    while($start < $end){
+            <select name="reserve" class="custom-select mr-sm-2">
+              <?php
+              $start = date($row['timeopen']);
+              $end = date($row['timeclose']);
+              while ($start < $end) {
 
-                      echo '<option class="dropdown-item" href="#" value="' . $start .'"' . '>' . $start .'-' . date( "H:i:s", strtotime("+1 hour", strtotime($start))) . '</option>';
-                      
-                      $start = date( "H:i:s", strtotime("+1 hour", strtotime($start)));
+                echo '<option class="dropdown-item" href="#" value="' . $start . '"' . '>' . $start . '-' . date("H:i:s", strtotime("+1 hour", strtotime($start))) . '</option>';
 
-                    }
+                $start = date("H:i:s", strtotime("+1 hour", strtotime($start)));
+              }
 
-                ?>
-                <!-- <option class="dropdown-item" href="#" value="" >Ca 1 8h-11h</option> -->
+              ?>
+              <!-- <option class="dropdown-item" href="#" value="" >Ca 1 8h-11h</option> -->
             </select>
           </div>
           <div class="col-auto my-1">
@@ -96,6 +95,8 @@ while ($row = mysqli_fetch_array($data['detailShop'])) {
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           <div class="description">
             <p>
+              Với trang trí nhẹ nhàng cùng khung cảnh lãng mạng. Đây là lựa chọn rất thích hợp cho các bạn trẻ đã và đang yêu đến để trải nghiệm.
+
               <?php echo $row['description'] ?>
             </p>
           </div>
@@ -107,36 +108,28 @@ while ($row = mysqli_fetch_array($data['detailShop'])) {
               <img src="/muzzy/public/image/detail_2.jpeg" style="width:100%">
               <img src="/muzzy/public/image/detail_3.jpg" style="width:100%">
               <img src="/muzzy/public/image/detail_4.png" style="width:100%">
-              <img src="/muzzy/public/image/detail_5.png" style="width:100%">
-              <img src="/muzzy/public/image/detail_1.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_2.jpeg" style="width:100%">
+
             </div>
             <div class="column">
               <img src="/muzzy/public/image/detail_6.jpg" style="width:100%">
               <img src="/muzzy/public/image/detail_7.jpg" style="width:100%">
               <img src="/muzzy/public/image/detail_8.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_9.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_10.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_1.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_1.jpg" style="width:100%">
+
+
             </div>
             <div class="column">
               <img src="/muzzy/public/image/detail_9.jpg" style="width:100%">
               <img src="/muzzy/public/image/detail_2.jpeg" style="width:100%">
               <img src="/muzzy/public/image/detail_4.png" style="width:100%">
               <img src="/muzzy/public/image/detail_5.png" style="width:100%">
-              <img src="/muzzy/public/image/detail_10.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_1.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_1.jpg" style="width:100%">
+
             </div>
             <div class="column">
               <img src="/muzzy/public/image/detail_10.jpg" style="width:100%">
               <img src="/muzzy/public/image/detail_2.jpeg" style="width:100%">
               <img src="/muzzy/public/image/detail_3.jpg" style="width:100%">
               <img src="/muzzy/public/image/detail_4.png" style="width:100%">
-              <img src="/muzzy/public/image/detail_5.png" style="width:100%">
-              <img src="/muzzy/public/image/detail_1.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_2.jpeg" style="width:100%">
+
             </div>
           </div>
         </div>

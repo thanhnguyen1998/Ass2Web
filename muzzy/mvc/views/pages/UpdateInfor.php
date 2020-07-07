@@ -36,7 +36,7 @@
             <a href="#">Đổi mật khẩu</a>
           </div>
           <div class="form-control">
-            Chọn ảnh để upload: 
+            Chọn ảnh để upload:
             <input type="file" name="imageupload" id="imageupload">
           </div>
 
@@ -48,34 +48,6 @@
   </form>
 
 
-  
-  <div class="info">
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">STT</th>
-          <th scope="col">Tên</th>
-          <th scope="col">Địa chỉ</th>
-          <th scope="col">Giờ bắt đầu</th>
-          <th scope="col">Giờ kết thúc</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php 
-          for($i = 0; $i < count($data["ReserveShop"]); $i++){
-            echo 
-              '<tr>
-                <th scope="row">' . $i . '</th>
-                <td>' . $data["ReserveShop"][$i]["name"] . '</td>
-                <td>' . $data["ReserveShop"][$i]["address"] . '</td>
-                <td>' . $data["ReserveShop"][$i]["startTime"] . '</td>
-                <td>' . $data["ReserveShop"][$i]["endTime"] . '</td>
-              ';
-          } 
-        ?>
-      </tbody>
-    </table>
-  </div>
 
   <div class="info">
     <table class="table table-striped">
@@ -89,20 +61,20 @@
         </tr>
       </thead>
       <tbody>
-        <?php 
-          for($i = 0; $i < count($data["ReserveCourse"]); $i++){
-            echo 
-              '<tr>
+        <?php
+        for ($i = 0; $i < count($data["ReserveShop"]); $i++) {
+          echo
+            '<tr>
                 <th scope="row">' . $i . '</th>
-                <td>' . $data["ReserveCourse"][$i]["content"] . '</td>
-                <td>' . $data["ReserveCourse"][$i]["address"] . '</td>
-                <td>' . $data["ReserveCourse"][$i]["startTime"] . '</td>
-                <td>' . $data["ReserveCourse"][$i]["endTime"] . '</td>
+                <td>' . $data["ReserveShop"][$i]["name"] . '</td>
+                <td>' . $data["ReserveShop"][$i]["address"] . '</td>
+                <td>' . $data["ReserveShop"][$i]["startTime"] . '</td>
+                <td>' . $data["ReserveShop"][$i]["endTime"] . '</td>
               ';
-          } 
+        }
         ?>
       </tbody>
     </table>
   </div>
-  
+
 </div>

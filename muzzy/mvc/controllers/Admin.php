@@ -1,15 +1,13 @@
 <?php
 
-class Admin extends Controller
-{
+class Admin extends Controller {
 
     private $base_url;
     private $CommentModel;
     private $ShopModel;
     private $currentIdUser;
 
-    function __construct()
-    {
+    function __construct() {
         $this->action = "Default";
         $this->userModel = $this->model('UserModel');
         $this->CommentModel = $this->model('CommentModel');
@@ -22,19 +20,16 @@ class Admin extends Controller
         if ($this->currentIdUser == false) {
             header("Location: " . getBaseUrl() . "User/login");
         }
-    }
+        }
 
-    function
-    Default()
-    {
+        function Default() {
         $data = [
             'subAction' => 'feedback'
         ];
         $this->view("admin/administrator", $data);
     }
 
-    function administrator($s1 = 'feedback')
-    {
+    function administrator($s1 = 'feedback') {
         $role = $this->userModel->getRolebyIdUser($this->currentIdUser);
         if (empty($role)) {
             header("Location: " . getBaseUrl() . "Home");
@@ -49,8 +44,7 @@ class Admin extends Controller
         $this->view("admin/administrator", $data);
     }
 
-    function coffee($s1 = 'table')
-    {
+    function coffee($s1 = 'table') {
         $role = $this->userModel->getRolebyIdUser($this->currentIdUser);
         if (empty($role)) {
             header("Location: " . getBaseUrl() . "Home");
@@ -66,16 +60,14 @@ class Admin extends Controller
     }
 
 
-    function adFeedbackLoadlist()
-    {
+    function adFeedbackLoadlist() {
         $data = [
             'listFeedback' => $this->FeedBackModel->GetListFeedBack()
         ];
         $this->view("admin/administrator/ajax/feedback_loadlist", $data);
     }
 
-    function adUserLoadlist()
-    {
+    function adUserLoadlist() {
         $data = [
             'listUser' => $this->userModel->GetListUser(),
             'listUserRole' => $this->userModel->getRoleLable(),
@@ -83,8 +75,7 @@ class Admin extends Controller
         $this->view("admin/administrator/ajax/user_loadlist", $data);
     }
 
-    function adUserAdd()
-    {
+    function adUserAdd() {
         $idUser = $this->userModel->isLogged();
         if ($idUser !== false) {
             $data_add = [
@@ -104,8 +95,7 @@ class Admin extends Controller
         }
     }
 
-    function adUserUpdate()
-    {
+    function adUserUpdate() {
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id']) && $idUser !== false) {
             $idUserEdit = $_POST['id'];
@@ -118,14 +108,14 @@ class Admin extends Controller
                     'address' => "'" . $_POST['address'] . "'",
                 ];
                 $updateStatus = $this->userModel->update($idUserEdit, $data_update);
-                $data = [];
+                $data = [
+                ];
                 $this->view("admin/administrator/ajax/user_update", $data);
             }
         }
     }
 
-    function adUserEditForm()
-    {
+    function adUserEditForm() {
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id']) && $idUser !== false) {
             $idUserEdit = $_POST['id'];
@@ -140,8 +130,7 @@ class Admin extends Controller
         }
     }
 
-    function adUserDelete()
-    {
+    function adUserDelete() {
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id'])) {
             $id = $_POST['id'];
@@ -154,8 +143,7 @@ class Admin extends Controller
         }
     }
 
-    function adCoffeeLoadlist()
-    {
+    function adCoffeeLoadlist() {
 
         $data = [
             'listCoffee' => $this->ShopModel->GetListShopById()
@@ -163,8 +151,7 @@ class Admin extends Controller
         $this->view("admin/administrator/ajax/coffee_loadlist", $data);
     }
 
-    function adCoffeeAdd()
-    {
+    function adCoffeeAdd() {
         $idUser = $this->userModel->isLogged();
         if ($idUser !== false) {
             $data_add = [
@@ -187,8 +174,7 @@ class Admin extends Controller
         }
     }
 
-    function adCoffeeUpdate()
-    {
+    function adCoffeeUpdate() {
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id']) && $idUser !== false) {
             $idCoffee = $_POST['id'];
@@ -205,14 +191,14 @@ class Admin extends Controller
                     'discount' => "'" . $_POST['discount'] . "'"
                 ];
                 $updateStatus = $this->ShopModel->update($idCoffee, $data_update);
-                $data = [];
+                $data = [
+                ];
                 $this->view("admin/administrator/ajax/coffee_update", $data);
             }
         }
     }
 
-    function adCoffeeEditForm()
-    {
+    function adCoffeeEditForm() {
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id']) && $idUser !== false) {
             $idCoffee = $_POST['id'];
@@ -227,8 +213,7 @@ class Admin extends Controller
         }
     }
 
-    function adCoffeeDelete()
-    {
+    function adCoffeeDelete() {
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id']) && $idUser !== false) {
             $idCoffee = $_POST['id'];
@@ -241,8 +226,7 @@ class Admin extends Controller
         }
     }
 
-    function refCourseLoadlist()
-    {
+    function refCourseLoadlist() {
         $idUser = $this->userModel->isLogged();
         if ($idUser !== false) {
             $data = [
@@ -254,8 +238,8 @@ class Admin extends Controller
 
 
 
-    function refCommentLoadlist()
-    {
+    
+    function refCommentLoadlist() {
         $idUser = $this->userModel->isLogged();
         if ($idUser !== false) {
             $data = [
@@ -265,8 +249,7 @@ class Admin extends Controller
         }
     }
 
-    function refCommentDelete()
-    {
+    function refCommentDelete() {
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id'])) {
             $idComment = $_POST['id'];
@@ -277,8 +260,7 @@ class Admin extends Controller
         }
     }
 
-    function coffeeTableLoadlist()
-    {
+    function coffeeTableLoadlist() {
         $idUser = $this->userModel->isLogged();
         if ($idUser !== false) {
             $data = [
@@ -288,9 +270,8 @@ class Admin extends Controller
             $this->view("admin/coffee/ajax/table_loadlist", $data);
         }
     }
-
-    function coffeeCommentLoadlist()
-    {
+    
+    function coffeeCommentLoadlist() {
         $idUser = $this->userModel->isLogged();
         if ($idUser !== false) {
             $data = [
@@ -300,8 +281,7 @@ class Admin extends Controller
         }
     }
 
-    function coffeeCommentDelete()
-    {
+    function coffeeCommentDelete() {
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id'])) {
             $idComment = $_POST['id'];
@@ -311,4 +291,7 @@ class Admin extends Controller
             $this->view("admin/ref/ajax/comment_delete", $data);
         }
     }
+
 }
+
+?>

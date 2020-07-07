@@ -1,20 +1,23 @@
 <?php
 
-class UserModel extends Db {
+class UserModel extends Db
+{
 
     const USER_ROLE_ADMIN = 1;
     const USER_ROLE_REF = 2;
     const USER_ROLE_COFFEE = 3;
     const USER_ROLE_USER = 4;
-    
+
     private $table;
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
         $this->table = 'user';
     }
 
-    function Login($userName, $passWord) {
+    function Login($userName, $passWord)
+    {
         $query = "SELECT * FROM user
       WHERE username = '$userName' AND 
       password = '$passWord'
@@ -34,7 +37,8 @@ class UserModel extends Db {
         }
     }
 
-    function Signup($userName, $passWord, $fullName, $phoneNumber, $address, $role) {
+    function Signup($userName, $passWord, $fullName, $phoneNumber, $address, $role)
+    {
         $query = "INSERT INTO 
       user (username, password, fullname, phonenumber, address, role) 
       VALUES('$userName', '$passWord', '$fullName', $phoneNumber, '$address', '$role')";
@@ -46,8 +50,8 @@ class UserModel extends Db {
         }
     }
 
-    function GetUserById($id) {
-
+    function GetUserById($id)
+    {
         $query = "SELECT * FROM user WHERE id = '$id'";
         $result = $this->ExecuteQuery($query);
         while ($row = mysqli_fetch_array($result)) {
@@ -55,7 +59,8 @@ class UserModel extends Db {
         }
     }
 
-    function GetReserveShopById($id) {
+    function GetReserveShopById($id)
+    {
 
         $query = "SELECT * FROM reserve WHERE userID = '$id' AND type='shop'";
 
@@ -77,9 +82,10 @@ class UserModel extends Db {
         return $listShop;
     }
 
-   
 
-    function UpdateInfor($id, $fullName, $address, $phoneNumber, $imgurl) {
+
+    function UpdateInfor($id, $fullName, $address, $phoneNumber, $imgurl)
+    {
         $target_dir = "./public/image/";
         $target_file = $target_dir . basename($imgurl["name"]);
         $allowUpload = true;
@@ -119,13 +125,14 @@ class UserModel extends Db {
             return false;
         }
     }
-    
-    public function insert($data = ['keys' => 'values']) {
+
+    public function insert($data = ['keys' => 'values'])
+    {
         $query = "INSERT INTO user(" . join(",", array_keys($data)) . ") VALUES(" . join(",", array_values($data)) . ")";
 
         return $this->ExecuteQuery($query);
     }
-    
+
     public function GetDetailUser($id)
     {
         $query = "SELECT *
@@ -134,7 +141,8 @@ class UserModel extends Db {
         return $this->ExecuteQuery($query);
     }
 
-    public function update($idUserEdit, $data = ['keys' => 'values']) {
+    public function update($idUserEdit, $data = ['keys' => 'values'])
+    {
         $sets = [];
         foreach ($data as $key => $value) {
             array_push($sets, $key . "=" . $value);
@@ -149,7 +157,8 @@ class UserModel extends Db {
         return 0;
     }
 
-    function Logout() {
+    function Logout()
+    {
         unset($_SESSION['idUser']);
         unset($_SESSION['userName']);
         unset($_SESSION['fullName']);
@@ -157,7 +166,8 @@ class UserModel extends Db {
         unset($_SESSION['msgLogin']);
     }
 
-    public function isLogged() {
+    public function isLogged()
+    {
         /*
          * Return id of current user if logged, or false if didn't login
          * Depend on loggin module, must change below code 
@@ -168,29 +178,29 @@ class UserModel extends Db {
         return false;
     }
 
-    public function getRoleLable() {
+    public function getRoleLable()
+    {
         return [
             self::USER_ROLE_ADMIN => 'Admin',
-            self::USER_ROLE_REF => 'Người hướng dẫn',
             self::USER_ROLE_COFFEE => 'Chủ quán coffee',
             self::USER_ROLE_USER => 'Người dùng',
-
         ];
     }
-    
-    public function getRolebyIdUser($idUser){
-        $query = "SELECT user.role as role FROM user where id = " .$idUser;
+
+    public function getRolebyIdUser($idUser)
+    {
+        $query = "SELECT user.role as role FROM user where id = " . $idUser;
         //var_dump($idUser);die();
         $u = $this->ExecuteQuery($query);
         $u = mysqli_fetch_array($u);
-        if (empty($u)){
+        if (empty($u)) {
             return false;
         }
         return $u['role'];
     }
-            
-    function GetListUser() {
 
+    function GetListUser()
+    {
         $query = "SELECT * FROM user where status = 1";
         return $this->ExecuteQuery($query);
     }
