@@ -14,7 +14,6 @@ class Admin extends Controller {
         $this->ShopModel = $this->model('ShopModel');
         $this->FeedBackModel = $this->model('FeedBackModel');
 
-        //$_SESSION['idUser'] = 9;
         $this->currentIdUser = $this->userModel->isLogged();
 
         if ($this->currentIdUser == false) {

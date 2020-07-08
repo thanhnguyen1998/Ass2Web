@@ -8,7 +8,8 @@
             ?>
             <div class="item">
                 <a class="photo" href=<?php echo "/muzzy/Shop/ShopDetail/" . $result['id'] ?>>
-                    <img src="/muzzy/public/image/cafe.jpg" alt="" />
+                    <img src=<?php $listurl = ProcessUrlInamge($result['url_image']);
+                                                    echo $listurl[0];  ?> alt=""> 
                     <?php
                         if ($result['discount'] != NULL) {
                             ?>
