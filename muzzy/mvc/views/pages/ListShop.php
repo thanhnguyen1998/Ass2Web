@@ -21,7 +21,6 @@
             <a class="photo" href="/muzzy/Shop/ShopDetail/<?php echo $shop["id"] ?>">
               <img src="/muzzy/public/image/cafe.jpg" alt="" />
             </a>
-
             <div class="name-stars">
               <p class="name"><?php echo $shop["name"] ?></p>
               <div class="stars">

@@ -12,13 +12,13 @@ while ($row = mysqli_fetch_array($data['detailShop'])) {
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/muzzy/public/image/cafe.jpg" class="d-block w-100" alt="...">
+              <img width="800" height="500" src="/muzzy/public/image/14.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/muzzy/public/image/cafe.jpg" class="d-block w-100" alt="...">
+              <img width="800" height="500" src="/muzzy/public/image/15.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/muzzy/public/image/cafe.jpg" class="d-block w-100" alt="...">
+              <img width="800" height="500" src="/muzzy/public/image/16.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -104,31 +104,31 @@ while ($row = mysqli_fetch_array($data['detailShop'])) {
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
           <div class="row">
             <div class="column">
-              <img src="/muzzy/public/image/detail_1.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_2.jpeg" style="width:100%">
-              <img src="/muzzy/public/image/detail_3.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_4.png" style="width:100%">
+              <img src="/muzzy/public/image/cf1.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf2.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf3.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf4.jpg" style="width:100%">
 
             </div>
             <div class="column">
-              <img src="/muzzy/public/image/detail_6.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_7.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_8.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf6.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf7.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf8.jpg" style="width:100%">
 
 
             </div>
             <div class="column">
-              <img src="/muzzy/public/image/detail_9.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_2.jpeg" style="width:100%">
-              <img src="/muzzy/public/image/detail_4.png" style="width:100%">
-              <img src="/muzzy/public/image/detail_5.png" style="width:100%">
+              <img src="/muzzy/public/image/cf9.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf2.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf4.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf5.jpg" style="width:100%">
 
             </div>
             <div class="column">
-              <img src="/muzzy/public/image/detail_10.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_2.jpeg" style="width:100%">
-              <img src="/muzzy/public/image/detail_3.jpg" style="width:100%">
-              <img src="/muzzy/public/image/detail_4.png" style="width:100%">
+              <img src="/muzzy/public/image/cf10.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf2.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf3.jpg" style="width:100%">
+              <img src="/muzzy/public/image/cf4.jpg" style="width:100%">
 
             </div>
           </div>

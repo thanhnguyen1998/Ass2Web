@@ -8,7 +8,6 @@
               <i class="fas fa-home"></i>
             </div>
             <div class="label">
-              <i class="fas fa-star"></i>
               Trang chủ
             </div>
           </a>
@@ -17,7 +16,6 @@
               <i class="fas fa-percent"></i>
             </div>
             <div class="label">
-              <i class="fas fa-star"></i>
               Khuyến mãi
             </div>
           </a>
@@ -26,7 +24,6 @@
               <i class="fas fa-store"></i>
             </div>
             <div class="label">
-              <i class="fas fa-star"></i>
               Quán cafe mới
             </div>
           </a>
@@ -35,7 +32,6 @@
               <i class="fab fa-hotjar"></i>
             </div>
             <div class="label">
-              <i class="fas fa-star"></i>
               Địa điểm HOT
             </div>
           </a>
@@ -44,7 +40,6 @@
               <i class="far fa-paper-plane"></i>
             </div>
             <div class="label">
-              <i class="fas fa-star"></i>
               Phản hồi
             </div>
           </a>
@@ -53,7 +48,6 @@
               <i class="fas fa-users-cog"></i>
             </div>
             <div class="label">
-              <i class="fas fa-star"></i>
               Về chúng tôi
             </div>
           </a>
@@ -78,9 +72,6 @@
               <div class="carousel-item">
                 <img src="/muzzy/public/image/banner3.jpeg" alt="Third slide">
               </div>
-              <div class="carousel-item">
-                <img src="/muzzy/public/image/banner4.jpeg" alt="Four slide">
-              </div>
             </div>
           </div>
         </div>
@@ -100,13 +91,13 @@
       <section class="slider-area slider">
         <?php
         while ($row = mysqli_fetch_array($data['listShopDiscount'])) {
-          ?>
+        ?>
           <div class="disable-current">
             <div class="wraper-item">
               <div class="deal-item">
                 <a href="/muzzy/Shop/ShopDetail/<?php echo $row["idshop"] ?>" class="avatar">
-                  <img src=<?php $listurl = ProcessUrlInamge($row['url_image']);
-                              echo $listurl[0];  ?> alt="">
+                  <img width="400" height="180" src=<?php $listurl = ProcessUrlInamge($row['url_image']);
+                                                    echo $listurl[0];  ?> alt="">
                 </a>
 
                 <div class="percent">
@@ -141,13 +132,13 @@
       <section class="slider-area slider">
         <?php
         while ($row = mysqli_fetch_array($data['listShop'])) {
-          ?>
+        ?>
           <div class="disable-current">
             <div class="wraper-item">
               <div class="deal-item">
                 <a href="/muzzy/Shop/ShopDetail/<?php echo $row["id"] ?>" class="avatar">
-                  <img src=<?php $listurl = ProcessUrlInamge($row['url_image']);
-                              echo $listurl[0];  ?> alt="">
+                  <img width="400" height="180" src=<?php $listurl = ProcessUrlInamge($row['url_image']);
+                                                    echo $listurl[0];  ?> alt="">
                 </a>
 
                 <div class="brand">
