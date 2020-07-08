@@ -46,7 +46,7 @@
         </form>
         <?php
         if (isset($_SESSION['fullName'])) {
-          ?>
+        ?>
           <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <?php echo "Hi, " . $_SESSION['fullName'] ?>
@@ -59,7 +59,7 @@
           </div>
         <?php
         } else {
-          ?>
+        ?>
           <a href="/muzzy/User/Register">
             <button class="btn btn-outline-danger my-2 mr-sm-2" type="button">Đăng ký</button>
           </a>
@@ -83,7 +83,7 @@
           <div class="contact-title">
             <div class="icon">
               <i class="far fa-envelope"></i>
-              
+
             </div>
             <h2>Liên hệ với chúng tôi</h2>
             <h5>Luôn luôn lắng nghe phản hồi từ phía khách hàng để đêm lại chất lượng dịch vụ tốt nhất</h5>
@@ -133,9 +133,9 @@
       <div class="row text-center">
         <div class="col-md-4">
           <hr class="light">
-          <h5>Cafe's Shop</h5>
+          <h5>Muzzy</h5>
           <hr class="light">
-          <p>Cafe's Shop là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
+          <p>Muzzy là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
         </div>
         <div class="col-md-4">
           <hr class="light">
