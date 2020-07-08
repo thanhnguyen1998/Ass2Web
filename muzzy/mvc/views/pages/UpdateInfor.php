@@ -36,7 +36,7 @@
             <a href="#">Đổi mật khẩu</a>
           </div>
           <div class="form-control">
-            Chọn ảnh để upload: 
+            Chọn ảnh để upload:
             <input type="file" name="imageupload" id="imageupload">
           </div>
 
@@ -48,7 +48,7 @@
   </form>
 
 
-  
+
   <div class="info">
     <table class="table table-striped">
       <thead>
@@ -61,22 +61,19 @@
         </tr>
       </thead>
       <tbody>
-        <?php 
-          for($i = 0; $i < count($data["ReserveShop"]); $i++){
-            echo 
-              '<tr>
+        <?php
+        for ($i = 0; $i < count($data["ReserveShop"]); $i++) {
+          echo
+            '<tr>
                 <th scope="row">' . $i . '</th>
                 <td>' . $data["ReserveShop"][$i]["name"] . '</td>
                 <td>' . $data["ReserveShop"][$i]["address"] . '</td>
                 <td>' . $data["ReserveShop"][$i]["startTime"] . '</td>
                 <td>' . $data["ReserveShop"][$i]["endTime"] . '</td>
               ';
-          } 
+        }
         ?>
       </tbody>
     </table>
   </div>
-
-
-  
 </div>

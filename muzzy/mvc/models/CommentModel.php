@@ -3,8 +3,7 @@ class CommentModel extends Db
 {
 
     const TYPE_COFFEE = 1;
-    const TYPE_COURSE = 2;
-    const TYPE_REF = 3;
+    const TYPE_REF = 2;
 
     private $table;
 

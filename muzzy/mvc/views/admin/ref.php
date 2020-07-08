@@ -62,26 +62,7 @@
                                     <span class="text">Danh mục</span>
                                 </a>
                             </li>
-                            <li class="nav-item <?php
-                            if ($data['subAction'] == 'course') {
-                                echo 'bg-dark';
-                            }
-                            ?>">
-                                <a href="Admin/ref/course" class="nav-link px-2">
-                                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-                                    <span class="text">Quản lý khoá học</span>
-                                </a>
-                            </li>
-                            <li class="nav-item <?php
-                            if ($data['subAction'] == 'student') {
-                                echo 'bg-dark';
-                            }
-                            ?>">
-                                <a href="Admin/ref/student" class="nav-link px-2">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span class="text">Quản lý học viên</span>
-                                </a>
-                            </li>
+
                             <li class="nav-item <?php
                             if ($data['subAction'] == 'comment') {
                                 echo 'bg-dark';
@@ -93,7 +74,6 @@
                             </li>
                         </ul>
                     </div>
-
 
                     <?php
                     $include_file = __DIR__ . "/ref/" . $data['subAction'] . ".php";
