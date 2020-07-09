@@ -1,6 +1,6 @@
 <input 
     type="hidden" 
-    value="<?php echo $data['deleteCoffee']['idshop']; ?>"
+    value="<?php echo $data['deleteCoffee']['id']; ?>"
     id="adminCoffeeEditForm_id"
     >
 
@@ -10,7 +10,7 @@
         class="form-control" 
         type="text"
         id="adminCoffeeEditForm_shopname" 
-        value="<?php echo $data['deleteCoffee']['shopname']; ?>"
+        value="<?php echo $data['deleteCoffee']['name']; ?>"
         >
 </div>
 
@@ -21,7 +21,7 @@
         class="form-control" 
         type="text"
         id="adminCoffeeEditForm_ownername"
-        value="<?php echo $data['deleteCoffee']['ownername']; ?>"
+        value="<?php echo $data['deleteCoffee']['idowner']; ?>"
         disabled>
 </div>
 
@@ -30,7 +30,7 @@
     <textarea 
         class="form-control" 
         id="adminCoffeeEditForm_address" 
-        rows="3"><?php echo $data['deleteCoffee']['shopaddress']; ?></textarea>
+        rows="3"><?php echo $data['deleteCoffee']['address']; ?></textarea>
 </div>
 <hr>
 

@@ -26,7 +26,7 @@ if (empty($data['listCoffee'])) {
                 while ($row = mysqli_fetch_array($data['listCoffee'])) {
                     $i++;
                 ?>
-                    <tr class="admin_coffee_list_item" data-id="<?php echo $row['idshop']; ?>">
+                    <tr class="admin_coffee_list_item" data-id="<?php echo $row['id']; ?>">
                         <th scope="row"><?php echo $i; ?></th>
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['name']; ?></td>

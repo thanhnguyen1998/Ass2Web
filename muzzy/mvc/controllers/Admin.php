@@ -144,9 +144,7 @@ class Admin extends Controller
         if (isset($_POST['id'])) {
             $id = $_POST['id'];
             $data = [
-                'deleteUser' => $this->userModel->Update($id, [
-                    'status' => 0
-                ])
+                'deleteUser' => $this->userModel->update($id, ["isDelete" => 1])
             ];
             $this->view("admin/administrator/ajax/user_delete", $data);
         }
@@ -213,6 +211,7 @@ class Admin extends Controller
         $idUser = $this->userModel->isLogged();
         if (isset($_POST['id']) && $idUser !== false) {
             $idCoffee = $_POST['id'];
+            echo ($idCoffee);
             $detailCoffee = $this->ShopModel->GetDetailCoffee($idCoffee);
             if (!empty($detailCoffee)) {
                 $detailCoffee = mysqli_fetch_array($detailCoffee);

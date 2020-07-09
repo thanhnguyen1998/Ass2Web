@@ -150,7 +150,6 @@ class UserModel extends Db
 
         if (!empty($sets)) {
             $query = "UPDATE user SET " . join(",", $sets) . " WHERE id = " . $idUserEdit;
-
             return $this->ExecuteQuery($query);
         }
 
@@ -201,7 +200,7 @@ class UserModel extends Db
 
     function GetListUser()
     {
-        $query = "SELECT * FROM user";
+        $query = "SELECT * FROM user WHERE isDelete = 0";
         return $this->ExecuteQuery($query);
     }
 }
