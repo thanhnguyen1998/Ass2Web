@@ -14,9 +14,8 @@ class Shop extends Controller
     {
         $data = [
             "Controller" => "Shop",
-            "Action" => "ListShopDiscount",
+            "Action" => "listShop",
             "listShop" => $this->ShopModel->GetListShop(),
-            "listShopDiscount" => $this->ShopModel->GetListShopDiscount()
 
         ];
         $this->view("masterprimary", $data);
