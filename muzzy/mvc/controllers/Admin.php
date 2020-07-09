@@ -1,8 +1,6 @@
 <?php
 
 class Admin extends Controller {
-
-    private $base_url;
     private $CommentModel;
     private $ShopModel;
     private $currentIdUser;
