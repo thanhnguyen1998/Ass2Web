@@ -123,7 +123,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Chỉnh sửa thành viên</h4>
+                    <h4 class="modal-title">Chỉnh sửa quan ca phe</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 

@@ -16,7 +16,6 @@ class Shop extends Controller
             "Controller" => "Shop",
             "Action" => "listShop",
             "listShop" => $this->ShopModel->GetListShop(),
-
         ];
         $this->view("masterprimary", $data);
     }
