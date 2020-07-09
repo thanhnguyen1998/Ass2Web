@@ -14,7 +14,7 @@ class Shop extends Controller
     {
         $data = [
             "Controller" => "Shop",
-            "Action" => "ListShop",
+            "Action" => "ListShopDiscount",
             "listShop" => $this->ShopModel->GetListShop(),
             "listShopDiscount" => $this->ShopModel->GetListShopDiscount()
 

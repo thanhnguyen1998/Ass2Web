@@ -10,7 +10,7 @@
     <?php
   } elseif ($data['Controller'] == "Shop") {
     require_once "./public/modules/ShopDetail.php";
-    if ($data['Action'] == "ListShop") {
+    if ($data['Action'] == "ListShopDiscount") {
     ?>
       <title>Danh sách quán</title>
     <?php

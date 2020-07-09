@@ -13,7 +13,7 @@
               Trang chủ
             </div>
           </a>
-          <a href="#" class="item">
+          <a href="/muzzy/Shop" class="item">
             <div class="icon">
               <i class="fas fa-percent"></i>
             </div>
