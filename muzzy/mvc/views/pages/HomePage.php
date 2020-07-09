@@ -91,7 +91,7 @@
   <!-- List-Discount_Shop-box -->
   <div class="container padding">
     <div class="box-title">
-      <p><i class="fas fa-star"></i>Ưu đãi nỗi bật</p>
+      <p><i class="fas fa-star"></i>Ưu đãi nổi bật</p>
       <a href="/muzzy/Shop">Xem tất cả</a>
     </div>
     <hr class="my-1 hr-cus">

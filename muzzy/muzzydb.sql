@@ -205,14 +205,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `fullname`, `username`, `password`, `phonenumber`, `address`, `role`, `imageurl`) VALUES
-<<<<<<< HEAD:muzzy/muzzydb.sql
-(1, 'Vu Khac Tinh', 'vukhactinh', 'tinh123', 123456, 'Hồ Chí Minh', 1, '/muzzy/public/image/.gitignore'),
-(2, 'Nguyen Huu Duc Thanh', 'ducthanh', 'thanh123', 123456, 'Hồ Chí Minh', 1, NULL);
-
-=======
 (1, 'Vu Khac Tinh', 'vukhactinh', 'tinh123', 123456, 'Hồ Chí Minh', 1, NULL),
 (2, 'Nguyen Huu Duc Thanh', 'ducthanh', 'thanh123', 123456, 'Hồ Chí Minh', 1, NULL);
->>>>>>> origin/vkt:muzzy/muzzydb-4.sql
 --
 -- Chỉ mục cho các bảng đã đổ
 --
