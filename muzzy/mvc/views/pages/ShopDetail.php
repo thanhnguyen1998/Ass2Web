@@ -193,6 +193,7 @@ while ($row = mysqli_fetch_array($data['detailShop'])) {
 
     </div>
   </div>
+  
 <?php
 }
 ?>

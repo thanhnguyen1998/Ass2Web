@@ -16,10 +16,7 @@ class Shop extends Controller
             "Controller" => "Shop",
             "Action" => "ListShop",
             "listShop" => $this->ShopModel->GetListShop(),
-            "listShopDiscount" => $this->ShopModel->GetListShopDiscount(),
-            "listShopHot" => $this->ShopModel->GetListShopDiscount(),
-            "listShopNew" => $this->ShopModel->GetListShopDiscount(),
-            "listShopOlder" => $this->ShopModel->GetListShopDiscount()
+            "listShopDiscount" => $this->ShopModel->GetListShopDiscount()
 
         ];
         $this->view("masterprimary", $data);

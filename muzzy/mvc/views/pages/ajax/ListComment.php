@@ -4,7 +4,7 @@ while ($comment = mysqli_fetch_array($listComment)) {
   ?>
   <div class="show-comment" id="item-comment">
     <div class="avatar">
-      <img src="/muzzy/public/image/steve.jpg" />
+      <img src="/muzzy/public/image/user.png" />
     </div>
     <div class="info-comment">
       <div class="name-stars">

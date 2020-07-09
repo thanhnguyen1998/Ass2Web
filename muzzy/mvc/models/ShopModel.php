@@ -8,13 +8,13 @@ class ShopModel extends Db
         $this->table = 'shop';
     }
         
-    public function GetListShop() //chưa có status
+    public function GetListShop() 
     {
         $query = "SELECT * FROM shop";
         return $this->ExecuteQuery($query);
 
     }
-    public function GetListShopDiscount() // dư
+    public function GetListShopDiscount() 
     {
         $query = "SELECT * FROM shop, discount WHERE shop.id = discount.idshop";
         return $this->ExecuteQuery($query);
@@ -72,6 +72,3 @@ class ShopModel extends Db
         return 0;
     }
 }
-
-
-?>

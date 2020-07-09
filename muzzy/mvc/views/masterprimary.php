@@ -47,7 +47,7 @@
   <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top nav-top">
     <div class="container">
       <a class="navbar-brand" href="/muzzy/Home">
-        <img src="/muzzy/public/image/logo.png" style="width: 48px !important; height: 48px !important;" alt="logo">
+        <img src="/muzzy/public/image/logoOr.png" style="width: 48px !important; height: 48px !important;" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -118,16 +118,16 @@
         <div class="col-md-4">
           <hr class="light">
           <h5>
-            <img src="/muzzy/public/image/logo.png" style="width: 48px !important; height: 48px !important;" alt="logo">
+            <img src="/muzzy/public/image/logoOr.png" style="width: 48px !important; height: 48px !important;" alt="logo">
           </h5>
           <!-- <hr class="light"> -->
-          <p>Muzzy là trang web cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
+          <p>Heavenly là trang web cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
         </div>
         <div class="col-md-4">
           <hr class="light">
           <h5>Khung giờ làm việc</h5>
           <hr class="light">
-          <p>Thứ hai - thứ bảy: 8am - 5pm</p>
+          <p>Thứ hai - Thứ bảy: 8am - 5pm</p>
         </div>
         <div class="col-md-4">
           <hr class="light">
@@ -135,7 +135,7 @@
           <hr class="light">
           <p>268 Lý Thường Kiệt, Phường 14, Quận 10, Hồ Chí Minh</p>
           <p>Nhà A1</p>
-          <p>(028) 38 651 670 hoặc (028) 38 647 256 (Ext: 5282, 5283)</p>
+          <p>(028) 38 651 670 hoặc (028) 38 647 256 </p>
         </div>
         <div class="col-12">
           <hr class="light-100">

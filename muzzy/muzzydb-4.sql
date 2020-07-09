@@ -203,7 +203,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `fullname`, `username`, `password`, `phonenumber`, `address`, `role`, `imageurl`) VALUES
 (1, 'Vu Khac Tinh', 'vukhactinh', 'tinh123', 123456, 'Hồ Chí Minh', 1, NULL),
-(2, 'Nguyen Huu Duc Thanh', 'ducthanh', 'thanh123', 123456, 'Hồ Chí Minh', 1, NULL),
+(2, 'Nguyen Huu Duc Thanh', 'ducthanh', 'thanh123', 123456, 'Hồ Chí Minh', 1, NULL);
 --
 -- Indexes for dumped tables
 --

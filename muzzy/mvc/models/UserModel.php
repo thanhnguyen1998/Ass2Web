@@ -201,7 +201,7 @@ class UserModel extends Db
 
     function GetListUser()
     {
-        $query = "SELECT * FROM user where status = 1";
+        $query = "SELECT * FROM user";
         return $this->ExecuteQuery($query);
     }
 }

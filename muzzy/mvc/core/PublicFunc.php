@@ -11,7 +11,7 @@ function ProcessUrlMap($url)
 
 function getBaseUrl() {
     $port = ":" . $_SERVER['SERVER_PORT'];
-    if ($port == ":8080" || $port == ':4433') {
+    if ($port == ":80" || $port == ':4433') {
         $port = "";
     }
     return "http"

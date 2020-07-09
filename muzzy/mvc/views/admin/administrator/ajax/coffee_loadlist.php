@@ -2,7 +2,7 @@
 if (empty($data['listCoffee'])) {
     echo "Chưa có người dùng";
 } else {
-    ?>
+?>
     <div class="table-responsive">
         <table class="table table-striped w-100">
             <thead>
@@ -25,13 +25,13 @@ if (empty($data['listCoffee'])) {
                 $i = 0;
                 while ($row = mysqli_fetch_array($data['listCoffee'])) {
                     $i++;
-                    ?>
+                ?>
                     <tr class="admin_coffee_list_item" data-id="<?php echo $row['idshop']; ?>">
                         <th scope="row"><?php echo $i; ?></th>
-                        <td><?php echo $row['idshop']; ?></td>
-                        <td><?php echo $row['shopname']; ?></td>
-                        <td><?php echo $row['ownername']; ?></td>
-                        <td><?php echo $row['shopaddress']; ?></td>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['name']; ?></td>
+                        <td><?php echo $row['idowner']; ?></td>
+                        <td><?php echo $row['address']; ?></td>
                         <td><?php echo $row['description']; ?></td>
                         <td><?php echo $row['dateopening']; ?></td>
                         <td>Giờ mở cửa: <?php echo $row['timeopen']; ?>
