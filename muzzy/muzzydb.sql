@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Nov 14, 2019 at 08:18 PM
--- Server version: 10.3.15-MariaDB
--- PHP Version: 7.3.6
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th7 09, 2020 lúc 10:16 AM
+-- Phiên bản máy phục vụ: 10.4.13-MariaDB
+-- Phiên bản PHP: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,14 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `muzzydb`
+-- Cơ sở dữ liệu: `muzzydb`
 --
-CREATE DATABASE IF NOT EXISTS `muzzydb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `muzzydb`;
 
 -- --------------------------------------------------------
+
 --
--- Table structure for table `comment`
+-- Cấu trúc bảng cho bảng `comment`
 --
 
 CREATE TABLE `comment` (
@@ -40,14 +38,17 @@ CREATE TABLE `comment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `comment`
+-- Đang đổ dữ liệu cho bảng `comment`
 --
+
 INSERT INTO `comment` (`id`, `iduser`, `type`, `idowner`, `rate`, `content`, `time`) VALUES
-(35, 1, 1, 11, 4, 'hello', '2019-11-13 21:20:08');
+(35, 1, 1, 11, 4, 'hello', '2019-11-13 21:20:08'),
+(53, 1, 1, 17, 4, 'ngon\n', '2020-07-08 23:00:51');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `discount`
+-- Cấu trúc bảng cho bảng `discount`
 --
 
 CREATE TABLE `discount` (
@@ -57,7 +58,7 @@ CREATE TABLE `discount` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `discount`
+-- Đang đổ dữ liệu cho bảng `discount`
 --
 
 INSERT INTO `discount` (`id`, `idshop`, `discount`) VALUES
@@ -75,7 +76,7 @@ INSERT INTO `discount` (`id`, `idshop`, `discount`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `feedback`
+-- Cấu trúc bảng cho bảng `feedback`
 --
 
 CREATE TABLE `feedback` (
@@ -87,7 +88,7 @@ CREATE TABLE `feedback` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `feedback`
+-- Đang đổ dữ liệu cho bảng `feedback`
 --
 
 INSERT INTO `feedback` (`id`, `fullname`, `email`, `subject`, `content`) VALUES
@@ -96,7 +97,7 @@ INSERT INTO `feedback` (`id`, `fullname`, `email`, `subject`, `content`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reserve`
+-- Cấu trúc bảng cho bảng `reserve`
 --
 
 CREATE TABLE `reserve` (
@@ -109,16 +110,18 @@ CREATE TABLE `reserve` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `reserve`
+-- Đang đổ dữ liệu cho bảng `reserve`
 --
 
 INSERT INTO `reserve` (`id`, `type`, `roomID`, `userID`, `startTime`, `endTime`) VALUES
-(1, 'shop', 10, 22, '07:00:00', '08:00:00');
+(1, 'shop', 10, 22, '07:00:00', '08:00:00'),
+(2, 'shop', 13, 1, '21:00:00', '22:00:00'),
+(3, 'shop', 13, 1, '21:00:00', '22:00:00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `schedule`
+-- Cấu trúc bảng cho bảng `schedule`
 --
 
 CREATE TABLE `schedule` (
@@ -132,7 +135,7 @@ CREATE TABLE `schedule` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `schedule`
+-- Đang đổ dữ liệu cho bảng `schedule`
 --
 
 INSERT INTO `schedule` (`id`, `idinstructor`, `idshop`, `timestart`, `timeend`, `status`, `fee`) VALUES
@@ -146,7 +149,7 @@ INSERT INTO `schedule` (`id`, `idinstructor`, `idshop`, `timestart`, `timeend`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shop`
+-- Cấu trúc bảng cho bảng `shop`
 --
 
 CREATE TABLE `shop` (
@@ -165,7 +168,7 @@ CREATE TABLE `shop` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `shop`
+-- Đang đổ dữ liệu cho bảng `shop`
 --
 
 INSERT INTO `shop` (`id`, `name`, `address`, `dateopening`, `timeopen`, `timeclose`, `description`, `image`, `idowner`, `url_image`, `rate`, `discount`) VALUES
@@ -177,13 +180,13 @@ INSERT INTO `shop` (`id`, `name`, `address`, `dateopening`, `timeopen`, `timeclo
 (13, 'Lily’s Garden Caffee', '114 Đường số 6, Phường Tam Phú, quận Thủ Đức, Hồ Chí Minh', '2020-07-10', '06:00:00', '23:00:00', NULL, NULL, 15, '\"/muzzy/public/image/10.jpg\";\r\n\"/muzzy/public/image/cf1.jpg\";\r\n\"/muzzy/public/image/cf2.jpg\";\r\n\"/muzzy/public/image/cf3.jpg\";\r\n\"/muzzy/public/image/cf4.jpg\";\r\n\"/muzzy/public/image/cf5.jpg\";\r\n\"/muzzy/public/image/cf6.jpg\";\r\n\"/muzzy/public/image/cf7.jpg\";\r\n\"/muzzy/public/image/cf8.jpg\";\r\n\"/muzzy/public/image/cf9.jpg\";\r\n\"/muzzy/public/image/cf10.jpg\";', 2, 30),
 (14, 'The Coffee Ship ', '759 Trần Xuân Soạn, P.Tân Hưng, Q.7, Hồ Chí Minh', '2020-07-10', '06:00:00', '23:00:00', NULL, NULL, 17, '\"/muzzy/public/image/9.jpg\";\r\n\"/muzzy/public/image/cf1.jpg\";\r\n\"/muzzy/public/image/cf2.jpg\";\r\n\"/muzzy/public/image/cf3.jpg\";\r\n\"/muzzy/public/image/cf4.jpg\";\r\n\"/muzzy/public/image/cf5.jpg\";\r\n\"/muzzy/public/image/cf6.jpg\";\r\n\"/muzzy/public/image/cf7.jpg\";\r\n\"/muzzy/public/image/cf8.jpg\";\r\n\"/muzzy/public/image/cf9.jpg\";\r\n\"/muzzy/public/image/cf10.jpg\";', 5, 30),
 (15, 'Blank Lounge', 'Tầng 75 và 76 tòa nhà Landmark 81, Hồ Chí Minh', '2020-07-10', '06:00:00', '23:00:00', NULL, NULL, 15, '\"/muzzy/public/image/13.jpg\";\r\n\"/muzzy/public/image/cf1.jpg\";\r\n\"/muzzy/public/image/cf2.jpg\";\r\n\"/muzzy/public/image/cf3.jpg\";\r\n\"/muzzy/public/image/cf4.jpg\";\r\n\"/muzzy/public/image/cf5.jpg\";\r\n\"/muzzy/public/image/cf6.jpg\";\r\n\"/muzzy/public/image/cf7.jpg\";\r\n\"/muzzy/public/image/cf8.jpg\";\r\n\"/muzzy/public/image/cf9.jpg\";\r\n\"/muzzy/public/image/cf10.jpg\";', 4, 30),
-(16, 'EON Café', '50/51/52, Bitexco Financial Tower, 2 Hải Triều, Quận 1, Hồ Chí Minh', '2020-07-10', '06:00:00', '23:00:00', NULL, NULL, 17, '\"/muzzy/public/image/11.jpeg\";\r\n\"/muzzy/public/image/cf1.jpg\";\r\n\"/muzzy/public/image/cf2.jpg\";\r\n\"/muzzy/public/image/cf3.jpg\";\r\n\"/muzzy/public/image/cf4.jpg\";\r\n\"/muzzy/public/image/cf5.jpg\";\r\n\"/muzzy/public/image/cf6.jpg\";\r\n\"/muzzy/public/image/cf7.jpg\";\r\n\"/muzzy/public/image/cf8.jpg\";\r\n\"/muzzy/public/image/cf9.jpg\";\r\n\"/muzzy/public/image/cf10.jpg\";', 2, 30),
+(16, 'EON Café', '50/51/52, Bitexco Financial Tower, 2 Hải Triều, Quận 1, Hồ Chí Minh', '2020-07-10', '06:00:00', '23:00:00', NULL, NULL, 17, '\"/muzzy/public/image/11.jpg\";\r\n\"/muzzy/public/image/cf1.jpg\";\r\n\"/muzzy/public/image/cf2.jpg\";\r\n\"/muzzy/public/image/cf3.jpg\";\r\n\"/muzzy/public/image/cf4.jpg\";\r\n\"/muzzy/public/image/cf5.jpg\";\r\n\"/muzzy/public/image/cf6.jpg\";\r\n\"/muzzy/public/image/cf7.jpg\";\r\n\"/muzzy/public/image/cf8.jpg\";\r\n\"/muzzy/public/image/cf9.jpg\";\r\n\"/muzzy/public/image/cf10.jpg\";', 2, 30),
 (17, 'Chill Skybar', 'AB Tower, Tầng 26, 76A Lê Lai, Phường Bến Thành, Quận 1, Hồ Chí Minh', '2020-07-10', '06:00:00', '23:00:00', NULL, NULL, 15, '\"/muzzy/public/image/12.jpg\";\r\n\"/muzzy/public/image/cf1.jpg\";\r\n\"/muzzy/public/image/cf2.jpg\";\r\n\"/muzzy/public/image/cf3.jpg\";\r\n\"/muzzy/public/image/cf4.jpg\";\r\n\"/muzzy/public/image/cf5.jpg\";\r\n\"/muzzy/public/image/cf6.jpg\";\r\n\"/muzzy/public/image/cf7.jpg\";\r\n\"/muzzy/public/image/cf8.jpg\";\r\n\"/muzzy/public/image/cf9.jpg\";\r\n\"/muzzy/public/image/cf10.jpg\";', 3, 30);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Cấu trúc bảng cho bảng `user`
 --
 
 CREATE TABLE `user` (
@@ -198,46 +201,45 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Đang đổ dữ liệu cho bảng `user`
 --
 
 INSERT INTO `user` (`id`, `fullname`, `username`, `password`, `phonenumber`, `address`, `role`, `imageurl`) VALUES
-(1, 'Vu Khac Tinh', 'vukhactinh', 'tinh123', 123456, 'Hồ Chí Minh', 1, NULL),
+(1, 'Vu Khac Tinh', 'vukhactinh', 'tinh123', 123456, 'Hồ Chí Minh', 1, '/muzzy/public/image/.gitignore'),
 (2, 'Nguyen Huu Duc Thanh', 'ducthanh', 'thanh123', 123456, 'Hồ Chí Minh', 1, NULL);
+
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `comment`
+-- Chỉ mục cho bảng `comment`
 --
 ALTER TABLE `comment`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_foreign` (`iduser`);
 
-
 --
--- Indexes for table `discount`
+-- Chỉ mục cho bảng `discount`
 --
 ALTER TABLE `discount`
   ADD PRIMARY KEY (`id`),
   ADD KEY `shop_foreign_discount` (`idshop`);
 
 --
--- Indexes for table `feedback`
+-- Chỉ mục cho bảng `feedback`
 --
 ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`);
 
-
 --
--- Indexes for table `reserve`
+-- Chỉ mục cho bảng `reserve`
 --
 ALTER TABLE `reserve`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `schedule`
+-- Chỉ mục cho bảng `schedule`
 --
 ALTER TABLE `schedule`
   ADD PRIMARY KEY (`id`),
@@ -245,94 +247,85 @@ ALTER TABLE `schedule`
   ADD KEY `user_foreign_schedule` (`idinstructor`);
 
 --
--- Indexes for table `shop`
+-- Chỉ mục cho bảng `shop`
 --
 ALTER TABLE `shop`
   ADD PRIMARY KEY (`id`),
   ADD KEY `owner_shop_foreign` (`idowner`);
+
 --
--- Indexes for table `user`
+-- Chỉ mục cho bảng `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
+
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `comment`
+-- AUTO_INCREMENT cho bảng `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
--- AUTO_INCREMENT for table `discount`
+-- AUTO_INCREMENT cho bảng `discount`
 --
 ALTER TABLE `discount`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `feedback`
+-- AUTO_INCREMENT cho bảng `feedback`
 --
 ALTER TABLE `feedback`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
-
 --
--- AUTO_INCREMENT for table `reserve`
+-- AUTO_INCREMENT cho bảng `reserve`
 --
 ALTER TABLE `reserve`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `schedule`
+-- AUTO_INCREMENT cho bảng `schedule`
 --
 ALTER TABLE `schedule`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `shop`
+-- AUTO_INCREMENT cho bảng `shop`
 --
 ALTER TABLE `shop`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
-
 --
--- Constraints for table `comment`
+-- Các ràng buộc cho bảng `comment`
 --
 ALTER TABLE `comment`
   ADD CONSTRAINT `user_foreign` FOREIGN KEY (`iduser`) REFERENCES `user` (`id`);
 
-
 --
--- Constraints for table `discount`
+-- Các ràng buộc cho bảng `discount`
 --
 ALTER TABLE `discount`
   ADD CONSTRAINT `shop_foreign_discount` FOREIGN KEY (`idshop`) REFERENCES `shop` (`id`);
 
-
 --
--- Constraints for table `schedule`
+-- Các ràng buộc cho bảng `schedule`
 --
 ALTER TABLE `schedule`
   ADD CONSTRAINT `shop_foreign_schedule` FOREIGN KEY (`idshop`) REFERENCES `shop` (`id`);
-
---
--- Constraints for table `shop`
---
-ALTER TABLE `shop`
-  ADD CONSTRAINT `owner_shop_foreign` FOREIGN KEY (`idowner`) REFERENCES `user` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
