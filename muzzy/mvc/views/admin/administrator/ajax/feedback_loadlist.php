@@ -1,6 +1,6 @@
 <?php
 if (empty($data['listFeedback'])) {
-    echo "Chưa có người dùng";
+    echo "Chưa có phản hồi";
 } else {
     ?>
     <div class="table-responsive">

@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top nav-top">
     <div class="container">
       <a class="navbar-brand" href="/muzzy/Home">
-        <img src="/muzzy/public/image/logo.png" style="width: 48px !important; height: 48px !important;" alt="logo">
+        <img src="/muzzy/public/image/logoOr.png" style="width: 48px !important; height: 48px !important;" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -86,7 +86,7 @@
 
             </div>
             <h2>Liên hệ với chúng tôi</h2>
-            <h5>Luôn luôn lắng nghe phản hồi từ phía khách hàng để đêm lại chất lượng dịch vụ tốt nhất</h5>
+            <h5>Luôn luôn lắng nghe phản hồi từ phía khách hàng để đem lại chất lượng dịch vụ tốt nhất</h5>
           </div>
         </div>
         <div class="col-md-9">

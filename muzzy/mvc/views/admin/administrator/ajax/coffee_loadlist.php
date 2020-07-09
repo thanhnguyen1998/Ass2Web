@@ -1,6 +1,6 @@
 <?php
 if (empty($data['listCoffee'])) {
-    echo "Chưa có người dùng";
+    echo "Chưa có quán";
 } else {
     ?>
     <div class="table-responsive">

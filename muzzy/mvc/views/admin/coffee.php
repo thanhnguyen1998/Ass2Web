@@ -16,7 +16,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-2 col-4">
                         <a class="navbar-brand" href="/muzzy/Home">
-                            <img src="/muzzy/public/image/logo.png" style="width: 48px !important; height: 48px !important;" alt="logo">
+                            <img src="/muzzy/public/image/logoOr.png" style="width: 48px !important; height: 48px !important;" alt="logo">
                         </a>
                     </div>
                     <div class="col-md-6 col-8">

@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top nav-top">
     <div class="container">
       <a class="navbar-brand" href="/muzzy/Home">
-        <img src="/muzzy/public/image/logo.png" style="width: 48px !important; height: 48px !important;" alt="logo">
+        <img src="/muzzy/public/image/logoOr.png" style="width: 48px !important; height: 48px !important;" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -83,14 +83,14 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img src="/muzzy/public/image/cf1.jpg" alt="First slide">
+        <img src="/muzzy/public/image/cf11.jpg" alt="First slide">
         <div class="carousel-caption">
           <h1 class="display-2">Muzzy</h1>
           <p>Tìm kiếm quán cafe theo sở thích của bạn</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/muzzy/public/image/cf2.jpg" alt="Second slide">
+        <img src="/muzzy/public/image/cf12.jpg" alt="Second slide">
         <div class="carousel-caption">
           <h1>Muzzy</h1>
           <p>Nhanh và tiện ích</p>
@@ -141,7 +141,7 @@
         </a>
       </div>
       <div class="col-lg-6">
-        <img width="700" height="400" src="/muzzy/public/image/cf3.jpg" alt="">
+        <img width="100%" src="/muzzy/public/image/cf3.jpg" alt="">
       </div>
     </div>
   </div>
@@ -152,9 +152,9 @@
   <div class="container-fluid padding">
     <div class="row text-center welcome">
       <div class="col-12">
-        <h1 class="display-4">
+        <h2 class="display-4">
           Thành viên
-        </h1>
+        </h2>
 
       </div>
       <hr>
@@ -198,9 +198,9 @@
   <div class="container-fluid padding">
     <div class="row text-center padding">
       <div class="col-12">
-        <h1 class="display-4">
+        <h2 class="display-4">
           Liên hệ
-        </h1>
+        </h2>
       </div>
       <div class="col-12 social padding">
         <a href="#"><i class="fab fa-facebook"></i></a>
