@@ -83,16 +83,16 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img src="/muzzy/public/image/cf1.jpg" alt="First slide">
+        <img src="/muzzy/public/image/cf11.jpg" alt="First slide">
         <div class="carousel-caption">
-          <h1 class="display-2">Muzzy</h1>
+          <h1 class="display-2">Heavenly</h1>
           <p>Tìm kiếm quán cafe theo sở thích của bạn</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/muzzy/public/image/cf2.jpg" alt="Second slide">
+        <img src="/muzzy/public/image/cf12.jpg" alt="Second slide">
         <div class="carousel-caption">
-          <h1>Muzzy</h1>
+          <h1>Heavenly</h1>
           <p>Nhanh và tiện ích</p>
         </div>
       </div>
@@ -132,8 +132,8 @@
   <div class="container-fluid padding">
     <div class="row padding">
       <div class="col-lg-6 mb-3">
-        <h2>Tại sao Website này hữu ích?</h2>
-        <p>Website tổng hợp thông tin các quán café ở TP.HCM</p>
+        <h2>Chúng tôi có thể làm gì cho bạn?</h2>
+        <p>Cung cấp thông tin các quán café ở TP.HCM</p>
         <p>Kết nối chủ quán và khách hàng lại gần hơn. Bày tỏ cảm xúc người dùng và đánh giá khách quan</p>
         <p>Công cụ tuyệt vời cho việc quảng cáo quán nước của mình</p>
         <a href="/muzzy/Home">
@@ -141,7 +141,7 @@
         </a>
       </div>
       <div class="col-lg-6">
-        <img width="700" height="400" src="/muzzy/public/image/cf3.jpg" alt="">
+        <img width="100%" src="/muzzy/public/image/cf3.jpg" alt="">
       </div>
     </div>
   </div>
@@ -152,9 +152,9 @@
   <div class="container-fluid padding">
     <div class="row text-center welcome">
       <div class="col-12">
-        <h1 class="display-4">
+        <h2 class="display-4">
           Thành viên
-        </h1>
+        </h2>
 
       </div>
       <hr>
@@ -198,9 +198,9 @@
   <div class="container-fluid padding">
     <div class="row text-center padding">
       <div class="col-12">
-        <h1 class="display-4">
+        <h2 class="display-4">
           Liên hệ
-        </h1>
+        </h2>
       </div>
       <div class="col-12 social padding">
         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -217,9 +217,9 @@
       <div class="row text-center">
         <div class="col-md-4">
           <hr class="light">
-          <h5>Muzzy</h5>
+          <h5>Heavenly</h5>
           <hr class="light">
-          <p>Muzzy là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
+          <p>Heavenly là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
         </div>
         <div class="col-md-4">
           <hr class="light">

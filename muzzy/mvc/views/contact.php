@@ -86,7 +86,7 @@
 
             </div>
             <h2>Liên hệ với chúng tôi</h2>
-            <h5>Luôn luôn lắng nghe phản hồi từ phía khách hàng để đêm lại chất lượng dịch vụ tốt nhất</h5>
+            <h5>Luôn luôn lắng nghe phản hồi từ phía khách hàng để đem lại chất lượng dịch vụ tốt nhất</h5>
           </div>
         </div>
         <div class="col-md-9">
@@ -133,9 +133,9 @@
       <div class="row text-center">
         <div class="col-md-4">
           <hr class="light">
-          <h5>Muzzy</h5>
+          <h5>Heavenly</h5>
           <hr class="light">
-          <p>Muzzy là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
+          <p>Heavenly là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
         </div>
         <div class="col-md-4">
           <hr class="light">
