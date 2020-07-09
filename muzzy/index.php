@@ -3,6 +3,11 @@
 
 <head>
   <link rel="shortcut icon" type="image/png" href="/muzzy/public/image/logoOr.png"/>
+  <style>
+    html, body {
+      background-color: #FFE7BA !important;
+    }
+  </style>
 </head>
 
 <?php

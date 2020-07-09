@@ -66,16 +66,16 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img src="/muzzy/public/image/banner3.jpeg" alt="First slide">
+                <img src="/muzzy/public/image/banner1.jpeg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img src="/muzzy/public/image/banner1.jpeg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img src="/muzzy/public/image/banner2.jpeg" alt="Third slide">
+                <img src="/muzzy/public/image/banner2.jpeg" alt="Second slide">
               </div>
               <div class="carousel-item">
                 <img src="/muzzy/public/image/banner3.jpeg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img src="/muzzy/public/image/banner4.jpeg" alt="Third slide">
               </div>
             </div>
           </div>

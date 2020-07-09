@@ -133,9 +133,9 @@
       <div class="row text-center">
         <div class="col-md-4">
           <hr class="light">
-          <h5>Muzzy</h5>
+          <h5>Heavenly</h5>
           <hr class="light">
-          <p>Muzzy là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
+          <p>Heavenly là ứng dụng cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
         </div>
         <div class="col-md-4">
           <hr class="light">
