@@ -68,13 +68,13 @@
         if (isset($_SESSION['fullName'])) {
         ?>
           <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <?php echo "Hi, " . $_SESSION['fullName'] ?>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="/muzzy/User/UpdateInfor">Thông tin cá nhân</a>
-              <a class="dropdown-item" href="#">Tin mới</a>
-              <a class="dropdown-item" href="/muzzy/User/Logout">Đăng xuất</a>
+              <a class="dropdown-item" href="/muzzy/User/UpdateInfor"><i class="fa fa-user"></i> Thông tin cá nhân</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-bell text-warning"></i> Tin mới</a>
+              <a class="dropdown-item" href="/muzzy/User/Logout"><i class="fa fa-power-off text-danger"></i> Đăng xuất</a>
             </div>
           </div>
         <?php
@@ -113,32 +113,28 @@
 
   <!-- footer -->
   <footer class="mt-4">
-    <div class="container-fluid padding">
-      <div class="row text-center">
+    <div class="container-fluid padding" style="background-color: #242424; color: #d5d5d5">
+      <div class="row text-center pt-5">
         <div class="col-md-4">
-          <hr class="light">
           <h5>
             <img src="/muzzy/public/image/logoOr.png" style="width: 48px !important; height: 48px !important;" alt="logo">
           </h5>
-          <!-- <hr class="light"> -->
           <p>Heavenly là trang web cung cấp giải pháp thu hút khách hàng cho doanh nghiệp về lĩnh việc thức uống</p>
         </div>
         <div class="col-md-4">
-          <hr class="light">
           <h5>Khung giờ làm việc</h5>
-          <hr class="light">
+          <hr class="light" color="#d5d5d5">
           <p>Thứ hai - Thứ bảy: 8am - 5pm</p>
         </div>
         <div class="col-md-4">
-          <hr class="light">
           <h5>Liên hệ</h5>
-          <hr class="light">
+          <hr class="light" color="#d5d5d5">
           <p>268 Lý Thường Kiệt, Phường 14, Quận 10, Hồ Chí Minh</p>
           <p>Nhà A1</p>
           <p>(028) 38 651 670 hoặc (028) 38 647 256 </p>
         </div>
         <div class="col-12">
-          <hr class="light-100">
+          <hr class="light-100" color="#d5d5d5">
           <h5>&copy; Copyright by TNT team</h5>
         </div>
       </div>
@@ -147,11 +143,8 @@
 
   <!-- Loading page animations -->
   <div class="loader-wrapper">
-    <!-- <span class="loader"><span class="loader-inner"></span></span> -->
     <div class="loading">
-      <div></div>
-      <div></div>
-      <div></div>
+      <img src="/muzzy/public/image/loading.gif">
     </div>
   </div>
 

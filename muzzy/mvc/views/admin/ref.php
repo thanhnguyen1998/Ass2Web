@@ -34,15 +34,13 @@
                     <div class="col-md-4 col-8 text-right">
                         <div class="user_area">
                             <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <?php echo "Hi, " . $_SESSION['fullName'] ?>
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="/muzzy/User/UpdateInfor">Thông tin cá nhân</a>
-                                    <a class="dropdown-item" href="/muzzy/User/Logout">Đăng xuất</a>
+                                    <a class="dropdown-item" href="/muzzy/User/UpdateInfor"><i class="fa fa-user"></i> Thông tin cá nhân</a>
+                                    <a class="dropdown-item" href="/muzzy/User/Logout"><i class="fa fa-power-off text-danger"></i> Đăng xuất</a>
                                 </div>
-                                <i class="fa fa-2x fa-envelope"></i>
-                                <i class="fa fa-2x fa-bell"></i>
                             </div>
 
                         </div>

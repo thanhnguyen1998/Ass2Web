@@ -175,5 +175,4 @@
         </div>
       </div>
     </div>
-    <hr class="my-1 hr-cus">
 </div>

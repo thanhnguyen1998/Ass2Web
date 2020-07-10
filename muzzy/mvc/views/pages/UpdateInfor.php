@@ -3,7 +3,11 @@
     <div class="info">
       <div class="avatar-container">
         <div class="avatar">
-          <img src=<?php echo $data['Infor']['imageurl'] ?> alt="">
+          <img src=<?php 
+            if ($data['Infor']['imageurl'] != "")
+              echo $data['Infor']['imageurl'];
+            else echo "/muzzy/public/image/human.png";
+          ?> alt="">
         </div>
       </div>
 
