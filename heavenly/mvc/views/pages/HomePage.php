@@ -66,13 +66,10 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img src="/heavenly/public/image/banner3.jpeg" alt="First slide">
+                <img src="/heavenly/public/image/banner1.jpeg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img src="/heavenly/public/image/banner1.jpeg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img src="/heavenly/public/image/banner2.jpeg" alt="Third slide">
+                <img src="/heavenly/public/image/banner2.jpeg" alt="Second slide">
               </div>
               <div class="carousel-item">
                 <img src="/heavenly/public/image/banner3.jpeg" alt="Third slide">
@@ -133,7 +130,6 @@
   <div class="container padding">
     <div class="box-title">
         <p><i class="fas fa-star"></i>Danh sách quán</p>
-        <hr class="my-1 hr-cus">
     </div>
   </div>
   <div class="body container ">

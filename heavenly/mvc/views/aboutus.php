@@ -122,14 +122,10 @@
     </div>
   </div>
 
-
-
-  <hr class="my-4">
-
-  <div class="container padding">
-    <div class="row padding">
+  <div class="container pt-5 pb-5 pl-5 pr-5" style="background-color: white; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); border-radius: 10px;">
+    <div class="row">
       <div class="col-lg-6 mb-3">
-        <h2>Chúng tôi có thể làm gì cho bạn?</h2>
+        <h2 class="mb-5">Chúng tôi có thể làm gì cho bạn?</h2>
         <p>Cung cấp thông tin các quán café ở TP.HCM</p>
         <p>Kết nối chủ quán và khách hàng lại gần hơn. Bày tỏ cảm xúc người dùng và đánh giá khách quan</p>
         <p>Công cụ tuyệt vời cho việc quảng cáo quán nước của mình</p>
@@ -143,10 +139,8 @@
     </div>
   </div>
 
-  <hr class="my-4">
-
   <!-- Team member -->
-  <div class="container-fluid padding">
+  <div class="container-fluid padding mt-5">
     <div class="row text-center welcome">
       <div class="col-12">
         <h2 class="display-5">
@@ -161,7 +155,7 @@
   <div class="container padding">
     <div class="row padding">
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" style="box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); border-radius: 10px;">
           <img class="card-img-top" src="/heavenly/public/image/human.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Vũ Khắc Tình</h5>
@@ -170,7 +164,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" style="box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); border-radius: 10px;">
           <img class="card-img-top" src="/heavenly/public/image/human.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Nguyễn Hữu Đức Thành</h5>
@@ -179,7 +173,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
+        <div class="card" style="box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); border-radius: 10px;">
           <img class="card-img-top" src="/heavenly/public/image/human.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Phạm Hồng Nhật</h5>
@@ -192,7 +186,7 @@
 
 
   <!-- Contact -->
-  <div class="container-fluid padding">
+  <div class="container-fluid padding mt-5">
     <div class="row text-center padding">
       <div class="col-12">
         <h2 class="display-5">
