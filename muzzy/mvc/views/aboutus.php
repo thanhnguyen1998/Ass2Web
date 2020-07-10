@@ -168,7 +168,7 @@
           <img class="card-img-top" src="/muzzy/public/image/human.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Vũ Khắc Tình</h5>
-            <p class="card-text">Thực hiện nội dung, viết trang chi tiết quán và danh sách quán</p>
+            <p class="card-text">Hiện thực trang admin</p>
           </div>
         </div>
       </div>
@@ -177,7 +177,7 @@
           <img class="card-img-top" src="/muzzy/public/image/human.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Nguyễn Hữu Đức Thành</h5>
-            <p class="card-text">Viết trang chủ và thiết kế tổng thể</p>
+            <p class="card-text">Thiết kế và viết API</p>
           </div>
         </div>
       </div>
@@ -185,8 +185,8 @@
         <div class="card">
           <img class="card-img-top" src="/muzzy/public/image/human.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Phạm Nhật</h5>
-            <p class="card-text">Viết trang admin</p>
+            <h5 class="card-title">Phạm Hồng Nhật</h5>
+            <p class="card-text">Viết trang chủ</p>
           </div>
         </div>
       </div>
